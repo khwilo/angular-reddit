@@ -1,0 +1,55 @@
+.header {
+  text-align: center;
+  border-bottom: 2px solid var(--clr-gray);
+  padding: 1rem;
+}
+
+.section__form {
+  margin: 2rem auto 0;
+  background-color: var(--clr-ocean-blue);
+  border-radius: 5px;
+  border: 2px solid var(--clr-gray);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.form__label {
+  font-weight: bold;
+}
+
+.form__control {
+  height: 2em;
+  border: 1px solid var(--clr-gray);
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.form__control:focus {
+  border: 1px solid var(--clr-ocean-blue);
+}
+
+.form__group--submit {
+  display: block;
+  margin-top: 2rem;
+  margin-left: auto;
+}
+
+.form__control--submit {
+  padding: 0.5em 1em;
+  height: initial;
+  border: none;
+  color: var(--clr-white);
+  background-color: var(--clr-green);
+  cursor: pointer;
+}

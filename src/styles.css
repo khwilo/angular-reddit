@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root {
+  font-size: calc(0.3em + 1vw);
+
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+  --clr-ocean-blue: #e6ffff;
+  --clr-gray: #e0e0e0;
+  --clr-dark-gray: #707070;
+  --clr-green: #4caf50;
+  --clr-dark-blue: #1976d2;
+}
+
+* {
+  font-family: 'Open Sans', serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-white);
+}
+
+.section {
+  display: flex;
+  width: 80%;
+}

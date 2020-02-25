@@ -1,0 +1,32 @@
+<div class="section votes">
+  <div class="statistic">
+    <div class="value">
+      {{ article?.votes }}
+    </div>
+    <div class="label">
+      Points
+    </div>
+  </div>
+
+  <div class="content">
+    <div>
+      <a class="content__title" href="{{ article?.link }}">
+        {{ article?.title }}
+      </a>
+      <div class="meta">({{ article.domain() }})</div>
+    </div>
+    <ul class="voters">
+      <li class="item">
+        <a href (click)="voteUp()" class="item__arrow">
+          <i class="fa fa-arrow-up" aria-hidden="true"></i> upvote
+        </a>
+      </li>
+      <li class="item">
+        <a href (click)="voteDown()" class="item__arrow">
+          <i class="fa fa-arrow-down" aria-hidden="true"></i>
+          downvote
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
